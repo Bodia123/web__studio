@@ -1,0 +1,133 @@
+.page__team {
+  background-color: #f5f4fa;
+}
+
+.team__title {
+  margin: 0;
+  padding-top: 60px;
+
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 117.857143%; /* 33/28 */
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: $main-color;
+}
+
+// team card
+.team__list {
+  @media screen and (max-width: 767px) {
+    margin-top: 30px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-top: 30px;
+
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.team__card {
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    height: 536px;
+    width: 354px;
+
+    &:not(:nth-child(even)) {
+      margin-right: 30px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    height: 428px;
+    width: 270px;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+.team__wrapper {
+  display: inline-block;
+
+  background-color: $white-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team__link {
+  display: inline-block;
+}
+
+.team__photo {
+  max-width: 100%;
+  // @media screen and (min-width: 480px) {
+  //   width: 450px;
+  //   height: 460px;
+  // }
+  // @media screen and (min-width: 768px) {
+  //   width: 354px;
+  //   height: 536px;
+  // }
+}
+
+.team__name {
+  margin-top: 30px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 118.75%; /* 19/16 */
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: $main-color;
+}
+.team__position {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 118.75%; /* 19/16 */
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: $secondary-color;
+}
+
+// social box
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
+.page__team .team__social-box {
+  padding-top: 16px;
+  padding-bottom: 24px;
+}
+.social__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+.social__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  color: $secondary-color;
+  &:hover {
+    color: $white-color;
+    background-color: $active-color;
+  }
+}
+.social__icon {
+  fill: currentColor;
+}

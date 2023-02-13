@@ -1,0 +1,16 @@
+// utils
+@import "./utils/color";
+@import "./utils/settings";
+@import "./utils/placeholders";
+@import "./allcomponents";
+
+// adaptive
+
+@import "./components/header";
+@import "./components/hero-section";
+@import "./components/feature-section";
+@import "./components/team";
+@import "./components/customers";
+@import "./components/footer";
+
+@import "./components/portfolio";

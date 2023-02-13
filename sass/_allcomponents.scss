@@ -1,0 +1,20 @@
+// logo
+.logo {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 116.666667%; /* 28/24 */
+  letter-spacing: 0.03em;
+
+  color: $active-color;
+  &__header > span {
+    color: $main-color;
+  }
+  &__footer > span {
+    color: $white-color;
+  }
+}
+.logo__header {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-right: 90px;
+}
